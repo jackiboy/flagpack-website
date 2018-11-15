@@ -1,0 +1,45 @@
+// typography
+
+// Font Face
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+
+
+// Root Typography
+:root{
+  @include font-size(0.95);
+  line-height: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $sans-serif;
+  font-weight: $font-weight-normal;
+  color: $body;
+  line-height: $line-height;
+}
+
+// Headers
+h1, h2, h3, h4, h5, h6{
+  font-family: $sans-serif;
+  font-weight: $font-weight-bold;
+  color: $body;
+  margin: $spacer 0;
+  line-height: $line-height * 1.5;
+}
+
+h1{
+  @include font-size(3.4);
+}
+h2{
+  @include font-size(2.5);
+}
+h3{
+  @include font-size(2.2);
+}
+h4{
+  @include font-size(2);
+}
+h5{
+  @include font-size(1.5);
+}
+h6{
+  @include font-size(1.05);
+}

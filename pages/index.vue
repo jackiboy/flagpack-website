@@ -1,6 +1,6 @@
 <template>
-  <section class="container">
-      <ul class="countries">
+  <main class="container">
+      <section class="countries__table">
         <country
           v-for="(country, key, index) in countries" 
           :key="index"
@@ -8,9 +8,8 @@
           :code="key|lowercase"
           :continent="country.continent"
         ></country>
-      </ul>
-      <!-- <span v-for="(country, index) in countries" class="fp fp-lg" :class="country.code|lowercase" ></span> -->
-  </section>
+      </section>
+  </main>
 </template>
 
 <script>

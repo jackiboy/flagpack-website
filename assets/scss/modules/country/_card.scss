@@ -1,0 +1,26 @@
+// country card
+
+.country__card{
+    lost-column: 1/6 6 $spacer-md;
+    margin-bottom: $spacer-md;
+    background: $white;
+    padding: $spacer-md;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-shadow: $card-box-shadow;
+    border-radius: $border-radius;
+    &--flag{
+        line-height: $line-height * 3.5;
+        width: (4 / 3) * ($line-height * 3.5);
+        margin-bottom: $spacer;
+        box-shadow: $card-box-shadow;
+    }
+    &--name{
+        @include font-size(0.9);
+        margin: 0;
+        text-align: center;
+    }
+}

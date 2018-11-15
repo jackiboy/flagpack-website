@@ -1,0 +1,24 @@
+// base
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    position:   relative;
+    min-height: 100vh;
+    background: $ceramic;
+    height: 100%;
+}
+
+@lost flexbox flex;
+
+.container {
+    lost-center: $container-width;
+    position: relative;
+}
+
+.clear-fix {
+    lost-utility: clearfix;
+}

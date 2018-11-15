@@ -1,0 +1,84 @@
+// variables
+
+//=== Colors #########################################################
+
+// App Colors
+$primary:                   #572fe9;
+$body:                      #222833;
+$base:                      darken($body, 10%);
+$grey:                      #9B9B9B;
+$ceramic:                   #f5f6f7;
+$grey-alt:                  #F5F3FE;
+$white:                     #FFFFFF;
+
+// Validation Colours
+$error:                     #FC4C72;
+$information:               #37A5ED;
+$success:                   #32E49A;
+
+// Social
+$facebook:                  #3b5998;
+$twitter:                   #55ACEE;
+$pinterest:                 #bd081c;
+$tumblr:                    #35465c;
+
+//=== Spacing #########################################################
+
+$spacer:                     1em;
+$spacer-sm:                  $spacer / 3;
+$spacer-md:                  $spacer * 1.5;
+$spacer-lg:                  $spacer * 2;
+
+//=== Borders #########################################################
+
+$border-radius:             6px;
+$border-radius-round:       100%;
+
+//=== Box Shadow #########################################################
+
+$box-shadow:                0 4px 16px 0 transparentize($base, 0.9);
+$card-box-shadow:           0 10px 10px -5px transparentize($base, 0.9);
+
+
+//=== Grid System #########################################################
+
+// Container
+$container-width: 1100px;
+
+//=== Layout  #########################################################
+
+// Navigation
+$navigation-height: 75px;
+
+
+//===  Breakpoints #########################################################
+
+@custom-media --tablet-l        only screen and 
+                                (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5),
+                                (min-width: 1024px) and (max-width: 1366px) and (min-resolution: 1.5dppx);
+
+@custom-media --tablet          only screen and 
+                                (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
+                                (min-width: 768px) and (max-width: 1024px) and (min-resolution: 2dppx);
+
+@custom-media --mobile-l        only screen and 
+                                (min-width: 481px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+                                (min-width: 481px) and (max-width: 767px) and (min-resolution: 2dppx);
+
+@custom-media --mobile          only screen and 
+                                (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), 
+                                (min-width: 320px) and (max-width: 480px) and (min-resolution: 2dppx);
+
+
+//===  Typography #########################################################
+
+// Families
+$sans-serif:                'Nunito', sans-serif;
+
+// Weights
+$font-weight-light:                300;
+$font-weight-normal:               400;
+$font-weight-bold:                 700;
+
+// line height
+$line-height:                      1em;
