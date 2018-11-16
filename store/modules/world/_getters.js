@@ -1,6 +1,19 @@
 const getters = {
-  getCountries: state => state.countries,
-  getContinents: state => state.continents
+  getContinents: state => state.continents,
+  getContinentCode(state) {
+    return query => state.continents.filter(continent => {
+      return continent.slug === query
+    });
+  },
+  getCountries(state) {
+    return query => state.countries.filter(country => {
+      if(query === 'ALL'){
+        return state.countries
+      }
+      return country.continent === query
+    });
+  },
+  getSearchResults: state => state.searchResults
 }
 
 export default getters;

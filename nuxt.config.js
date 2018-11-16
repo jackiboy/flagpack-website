@@ -21,7 +21,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#eb25e1' },
 
   /*
   ** Global CSS
@@ -32,7 +32,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~plugins/filters.js'
+    '~plugins/filters.js',
+    '~plugins/fuse.js',
   ],
 
   /*

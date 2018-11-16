@@ -2,9 +2,9 @@ const mutations ={
   setCountries(state, payload){
     state.countries = payload
   },
-  setContinents(state, payload){
-    state.continents = payload
-  },
+  searchResults(state, results){
+    state.searchResults = results
+  }
 }
 
 export default mutations;

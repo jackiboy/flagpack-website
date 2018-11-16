@@ -1,0 +1,26 @@
+.header{
+  height: 250px;
+  width: 100%;
+  background: linear-gradient(120deg,$primary 0, $comp 100%);
+  >.container{
+    height: 100%;
+    align-items: center;
+  }
+  &--search{
+    width: 100%;
+    text-align: center;
+    margin-top: $spacer-lg;
+    input{
+      @include font-size(1.1);
+      background: $white;
+      border: 0;
+      padding: $spacer;
+      width: 50%;
+      border-radius: 40px;
+      box-shadow: $card-box-shadow;
+      &::placeholder {
+        color: $body;
+      }
+    }
+  }
+}

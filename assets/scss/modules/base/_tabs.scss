@@ -1,0 +1,27 @@
+.tabs{
+    background: darken($primary, 5%);
+    margin-bottom: $spacer-lg;
+    &--navigation{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        li a{
+            padding: $spacer $spacer-lg;
+            display: flex;
+            color: $ceramic;
+            text-transform: capitalize;
+            font-weight: $font-weight-bold;
+            text-decoration: none;
+            &:hover, &:focus{
+                color: $white;
+            }
+            &.nuxt-link-exact-active{
+                background: darken($primary, 8%);
+                color: $secondary;
+            }
+        }
+    }
+}

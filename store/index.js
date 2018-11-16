@@ -1,4 +1,4 @@
-import { continents, countries } from 'countries-list'
+import { countries } from 'countries-list'
 
 import Vuex from 'vuex'
 
@@ -12,9 +12,7 @@ const createStore = () => {
     actions: {
       async nuxtServerInit ({ dispatch }, { app }) {
         const getCountries = await countries;
-        const getContinents = await continents;
         dispatch('world/setCountries', getCountries);
-        dispatch('world/setContinents', getContinents);
       }
     },
     modules: {
