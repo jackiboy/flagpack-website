@@ -55,16 +55,20 @@ module.exports = {
   ** Build configuration
   */
 
+  // router: {
+  //   middleware: 'redirect'
+  // },
+
   generate: {
     subFolders: false,
     routes: [
-      'all',
-      'north-america',
-      'south-america',
-      'africa',
-      'asia',
-      'europe',
-      'oceania'
+      '/all',
+      '/north-america',
+      '/south-america',
+      '/africa',
+      '/asia',
+      '/europe',
+      '/oceania'
     ]
   },
 
