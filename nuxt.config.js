@@ -54,6 +54,20 @@ module.exports = {
   /*
   ** Build configuration
   */
+
+  generate: {
+    subFolders: false,
+    routes: [
+      'all',
+      'north-america',
+      'south-america',
+      'africa',
+      'asia',
+      'europe',
+      'oceania'
+    ]
+  },
+
   build: {
     /*
     ** You can extend webpack config here
