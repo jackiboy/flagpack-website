@@ -13,7 +13,12 @@ const getters = {
       return country.continent === query
     });
   },
-  getSearchResults: state => state.searchResults
+  getSearchResults: state => state.searchResults,
+  getCountry(state) {
+    return query => state.countries.filter(country => {
+      return country.code === query.toUpperCase()
+    });
+  },
 }
 
 export default getters;

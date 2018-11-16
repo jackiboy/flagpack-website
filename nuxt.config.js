@@ -54,11 +54,6 @@ module.exports = {
   /*
   ** Build configuration
   */
-
-  // router: {
-  //   middleware: 'redirect'
-  // },
-
   generate: {
     subFolders: false,
     routes: [
