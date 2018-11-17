@@ -51,9 +51,10 @@ export default {
       console.log(err);
     }
   },
-  mounted(){
-    this.$store.dispatch('world/details', false);
-    noScroll.off();
+  created(){
+    if(this.details)
+      this.$store.dispatch('world/details', false);
+      noScroll.off();
   },
   components: {
     "base-nav": Nav, 

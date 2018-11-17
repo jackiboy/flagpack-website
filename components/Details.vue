@@ -48,16 +48,14 @@ export default {
     "details-markup": Markup
   },
   mounted() {
+    
+    noScroll.on();
+
     document.body.addEventListener('keyup', e => {
       if (this.details && e.keyCode === 27)
         this.closeDetails();
     });
-  },
-  watch: {
-    details(){
-      if(this.details)
-        noScroll.on();
-    }
+
   },
   methods: {
     closeDetails(){
