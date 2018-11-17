@@ -18,7 +18,7 @@
             &:hover, &:focus{
                 color: $white;
             }
-            &.nuxt-link-exact-active{
+            &.nuxt-link-exact-active, &.nuxt-link-active{
                 background: darken($primary, 8%);
                 color: $secondary;
             }
