@@ -25,6 +25,11 @@
 <script>
 export default {
   name: "header-search",
+
+  mounted(){
+    this.results = [];
+  },
+
   data: () => {
     return {
       query: '',
@@ -33,6 +38,7 @@ export default {
       params: ["name", "code", "native", "capital", "continent"]
     }
   },
+
   watch: {
     query(){
       if(this.query.length > 0)
@@ -44,16 +50,19 @@ export default {
       this.$store.dispatch('world/searchResults', this.results)
     }
   },
+
   methods: {
     clearSearch(){
       this.results = []
       this.$refs.search.value = ''
     }
   },
+
   computed: {
     countries() {
       return this.$store.getters["world/getCountries"]('ALL');
     }
   }
+  
 };
 </script>

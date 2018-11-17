@@ -1,16 +1,23 @@
 .header{
-  height: 220px;
+  height: 230px;
   width: 100%;
   background: linear-gradient(120deg,$primary 0, $comp 100%);
   >.container{
     height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  &--intro{
+    @include font-size(1.25);
+    margin-top: calc(#{$brand} + #{$spacer-md});
+    color: $white;
+    font-style: italic;
+    font-weight: $font-weight-bold;
   }
   &__search{
     width: 50%;
     text-align: center;
-    margin-top: $spacer-lg * 2;
     position: relative;
     &--button{
       @include font-size(1.75);

@@ -1,3 +1,5 @@
+$brand: 70px;
+
 .nav{
     width: 100%;
     position: relative;
@@ -5,7 +7,7 @@
     z-index: 1000;
     &--brand{
         width: 250px;
-        height: 70px;
+        height: $brand;
         background: darken($primary, 8%);
         position: absolute;
         left: 50%;
@@ -15,6 +17,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 1000;
         img{
             width: 60%;
         }

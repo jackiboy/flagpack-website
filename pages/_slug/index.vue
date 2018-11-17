@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="body" style="background-image: url('/wave.svg')">
       <base-nav></base-nav>
       <base-header></base-header>
       <base-tabs></base-tabs>
