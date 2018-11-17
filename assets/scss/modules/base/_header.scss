@@ -1,5 +1,5 @@
 .header{
-  height: 230px;
+  height: 250px;
   width: 100%;
   background: linear-gradient(120deg,$primary 0, $comp 100%);
   >.container{
@@ -10,7 +10,7 @@
   }
   &--intro{
     @include font-size(1.25);
-    margin-top: calc(#{$brand} + #{$spacer-md});
+    margin-top: calc(#{$brand} + #{$spacer-lg});
     color: $white;
     font-style: italic;
     font-weight: $font-weight-bold;
