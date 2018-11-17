@@ -39,8 +39,8 @@ const gb = [
     capital: "Cardiff"
   },
   {
-    name: "Northern Island",
-    native: "Northern Island",
+    name: "Northern Ireland",
+    native: "Northern Ireland",
     code: "GB-NIR",
     continent: "EU",
     capital: "Belfast"
