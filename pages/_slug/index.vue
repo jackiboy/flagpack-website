@@ -1,5 +1,8 @@
 <template>
     <div class="body" style="background-image: url('/wave.svg')">
+      <transition name="details">
+        <modal-details v-if="details"></modal-details>
+      </transition>
       <base-nav></base-nav>
       <base-header></base-header>
       <base-tabs></base-tabs>
@@ -29,10 +32,12 @@
 </template>
 
 <script>
+import noScroll from 'no-scroll';
 import Nav from '~/components/Base/Nav';
 import Header from '~/components/Base/Header/Header';
 import Tabs from '~/components/Base/Tabs';
 import Country from '~/components/Country';
+import Details from '~/components/Details';
 
 export default {
   async asyncData ({ params, store, error }) {
@@ -46,16 +51,24 @@ export default {
       console.log(err);
     }
   },
+  mounted(){
+    this.$store.dispatch('world/details', false);
+    noScroll.off();
+  },
   components: {
     "base-nav": Nav, 
     "base-header": Header,
     "base-tabs": Tabs,
     "country": Country,
+    "modal-details": Details
   },
   computed: {
     results(){
         return this.$store.getters['world/getSearchResults'];
-    }
+    },
+    details(){
+      return this.$store.getters['world/details']
+    },
   }
 }
 </script>

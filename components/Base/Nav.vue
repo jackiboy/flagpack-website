@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
     <div class="container">
-        <nuxt-link to="/all" class="nav--brand">
+        <nuxt-link to="/world" class="nav--brand">
             <img src="/logo.svg" alt="Flag Pack"/>
         </nuxt-link>
         <div class="nav__menu">

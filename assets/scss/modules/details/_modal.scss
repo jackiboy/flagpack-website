@@ -1,0 +1,58 @@
+.details__modal{
+    -webkit-overflow-scrolling: touch;
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    z-index: 1003;
+    padding: $spacer-lg * 2;
+    background: transparentize(darken($primary, 8%), 0.2);
+    &--body{
+        transition: all 0.3s;
+        background: $ceramic;
+        border-radius: $border-radius;
+        box-shadow: $card-box-shadow;
+        z-index: 100;
+        padding: $spacer-lg;
+        width: 75%;
+        margin: 0 auto;
+    }
+    &--close{
+        position: fixed;
+        right: $spacer;
+        top: $spacer;
+        background: transparent;
+        border: none;
+        color: $white;
+        &:hover{
+            cursor: pointer;
+            color: $secondary;
+        }
+        i{
+            @include font-size(3.5);
+        }
+    }
+    >.container{
+        position: relative;
+    }
+}
+
+
+.details-enter-active, .details-leave-active {
+    transition: all .25s;
+    .details__modal--body{
+        transition: all 0.25s ease-in-out;
+    }
+
+}
+.details-enter, .details-leave-to {
+    opacity: 0;
+    .details__modal--body{
+        transform: translateY(35px);
+        opacity: 0;
+    }
+    
+}

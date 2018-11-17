@@ -1,7 +1,7 @@
 const state = () => ({
   countries: [],
   continents: [
-    {name: "All", slug: "all", code: "ALL"},
+    {name: "World", slug: "world", code: "WORLD"},
     {name: "North America", slug: "north-america", code: "NA"},
     {name: "South America", slug: "south-america", code: "SA"},
     {name: "Africa", slug: "africa", code: "AF"},
@@ -10,6 +10,8 @@ const state = () => ({
     {name: "Oceania", slug: "oceania", code: "OC"},
   ],
   searchResults: [],
+  details: false,
+  country: null
 })
 
 export default state;

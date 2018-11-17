@@ -7,18 +7,15 @@ const getters = {
   },
   getCountries(state) {
     return query => state.countries.filter(country => {
-      if(query === 'ALL'){
+      if(query === 'WORLD'){
         return state.countries
       }
       return country.continent === query
     });
   },
   getSearchResults: state => state.searchResults,
-  getCountry(state) {
-    return query => state.countries.filter(country => {
-      return country.code === query.toUpperCase()
-    });
-  },
+  details: state => state.details,
+  getCountry: state => state.country,
 }
 
 export default getters;

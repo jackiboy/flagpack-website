@@ -4,7 +4,6 @@ $brand: 70px;
     width: 100%;
     position: relative;
     text-align: center;
-    z-index: 1000;
     &--brand{
         width: 250px;
         height: $brand;
@@ -17,12 +16,14 @@ $brand: 70px;
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 1000;
+        z-index: 1001;
         img{
             width: 60%;
+            pointer-events: none;
         }
     }
     &__menu{
+        z-index: 1000;
         position: absolute;
         left: 0;
         width: 100%; 

@@ -34,6 +34,7 @@ module.exports = {
   plugins: [
     '~plugins/filters.js',
     '~plugins/fuse.js',
+    '~plugins/clipboard.js',
   ],
 
   /*

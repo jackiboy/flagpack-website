@@ -12,6 +12,10 @@
     flex-direction: column;
     box-shadow: $card-box-shadow;
     border-radius: $border-radius;
+    text-decoration: none;
+    &:hover{
+        cursor: pointer;
+    }
     &--flag{
         line-height: $line-height * 3.5;
         width: (4 / 3) * ($line-height * 3.5);

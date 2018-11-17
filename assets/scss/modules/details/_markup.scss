@@ -1,0 +1,45 @@
+.details__markup{
+    margin: $spacer-lg * 2 0 0;
+    padding: 0;
+    list-style: none;
+    li{
+        width: 100%;
+    }
+    &--item{
+        display: flex;
+        margin-bottom: $spacer-lg;
+        align-items: center;
+        position: relative;
+    }
+    &--flag{
+        width: 70px; 
+    }
+    &--code{
+        flex: auto;
+        padding: $spacer-sm;
+        background: darken($ceramic, 5%);
+        border-radius: $border-radius;
+        display: inline-flex;
+        padding: $spacer;
+    }
+    &--copy{
+        @include font-size(1.25);
+        border: none;
+        background: transparent;
+        color: $secondary;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0 $spacer;
+        &:hover{
+            cursor: pointer;
+        }
+        &.is-copied{
+            @include font-size(1); 
+            font-weight: $font-weight-bold;
+        }
+    }
+}

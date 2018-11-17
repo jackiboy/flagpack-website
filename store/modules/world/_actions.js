@@ -8,7 +8,16 @@ const actions = {
   },
   searchResults: (context, payload) => {
     context.commit('searchResults', payload)
-  }
+  },
+  details: (context, arg) => {
+    context.commit('details', arg)
+  },
+  setCountry: (store, query) => {
+    const country = store.state.countries.filter(country => {
+      return country.code === query.toUpperCase()
+    });
+    store.commit('setCountry', country)
+  },
 }
 
 export default actions;
