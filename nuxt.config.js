@@ -58,7 +58,7 @@ module.exports = {
   generate: {
     subFolders: false,
     routes: [
-      '/all',
+      '/world',
       '/north-america',
       '/south-america',
       '/africa',

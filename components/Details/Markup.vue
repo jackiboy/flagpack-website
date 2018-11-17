@@ -23,7 +23,7 @@ export default {
         const content = this.$refs.code.textContent;
         this.$copyText(content).then(e => {
           this.copied = true;
-          setTimeout(() => this.copied = false, 1500);
+          setTimeout(() => this.copied = false, 1000);
         })
     }
   }
