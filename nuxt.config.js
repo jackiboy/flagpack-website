@@ -13,9 +13,6 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'easily add country flags to your site/app with flagpack, the lightweight flag icon toolkit' },
       { hid: 'og:image', property:'og:image', content: `https://flag.pk/og.jpg`}
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
 
