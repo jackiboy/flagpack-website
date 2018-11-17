@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "countries-list": "^2.3.2",
-    "flagpack": "^0.2.3",
+    "flagpack": "^0.3.3",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.2.0",
     "vue-fuse": "^2.0.2"

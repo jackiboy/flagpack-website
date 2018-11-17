@@ -1,26 +1,52 @@
 .header{
-  height: 250px;
+  height: 220px;
   width: 100%;
   background: linear-gradient(120deg,$primary 0, $comp 100%);
   >.container{
     height: 100%;
     align-items: center;
+    justify-content: center;
   }
-  &--search{
-    width: 100%;
+  &__search{
+    width: 50%;
     text-align: center;
-    margin-top: $spacer-lg;
+    margin-top: $spacer-lg * 2;
+    position: relative;
+    &--button{
+      @include font-size(1.75);
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: transparent;
+      border: 0;
+      color: $secondary;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 0 $spacer / 1.5;
+      &.is-button{
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
     input{
       @include font-size(1.1);
+      -webkit-appearance: textfield;
+      width: 100%;
       background: $white;
       border: 0;
       padding: $spacer;
-      width: 50%;
       border-radius: 40px;
       box-shadow: $card-box-shadow;
-      &::placeholder {
-        color: $body;
+      &::-webkit-search-decoration,
+      &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
       }
     }
   }
 }
+
+

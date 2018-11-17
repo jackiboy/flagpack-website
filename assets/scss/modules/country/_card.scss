@@ -17,8 +17,6 @@
         width: (4 / 3) * ($line-height * 3.5);
         margin-bottom: $spacer;
         box-shadow: $card-box-shadow;
-        background-position: center;
-        background-size: auto 98.99%;
     }
     &--name{
         @include font-size(0.9);

@@ -6,7 +6,7 @@
     &--brand{
         width: 250px;
         height: 70px;
-        background: darken($primary, 5%);
+        background: darken($primary, 8%);
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -17,6 +17,37 @@
         justify-content: center;
         img{
             width: 60%;
+        }
+    }
+    &__menu{
+        position: absolute;
+        left: 0;
+        width: 100%; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        color: $white;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                display: inline-block;
+                a{
+                    height: 50px;
+                    color: $white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    &:hover{
+                        color: $secondary;
+                    }
+                    i{
+                        @include font-size(2);
+                    }
+                }
+            }
         }
     }
 }
