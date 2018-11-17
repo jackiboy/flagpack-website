@@ -57,6 +57,11 @@ module.exports = {
     iconSrc: "./static/favicon.png"
   },
 
+  meta: {
+    theme_color: "#320fa8",
+    ogSiteName: "Flagpack",
+    ogTitle: "Flagpack | a lightweight flag icon toolkit for the web",
+  },
   /*
   ** Build configuration
   */
