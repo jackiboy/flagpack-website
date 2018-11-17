@@ -7,7 +7,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Lightweight flag icon toolkit for the web | Flagpack',
+    title: 'Flagpack | a lightweight flag icon toolkit for the web',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
