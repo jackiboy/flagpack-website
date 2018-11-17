@@ -26,28 +26,28 @@ const gb = [
   },
   {
     name: "Scotland",
-    native: "Scotland",
+    native: "Albain",
     code: "GB-SCT",
     continent: "EU",
     capital: "Edinburgh"
   },
   {
     name: "Wales",
-    native: "Wales",
+    native: "Cymru",
     code: "GB-WLS",
     continent: "EU",
     capital: "Cardiff"
   },
   {
     name: "Northern Ireland",
-    native: "Northern Ireland",
+    native: "Tuaisceart Éireann",
     code: "GB-NIR",
     continent: "EU",
     capital: "Belfast"
   },
   {
     name: "Shetland",
-    native: "Shetland",
+    native: "Sealtainn",
     code: "GB-ZET",
     continent: "EU",
     capital: "Lerwick"
