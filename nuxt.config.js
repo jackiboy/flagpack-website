@@ -41,7 +41,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
+    ['@nuxtjs/pwa', { workbox: false } ],
     '@nuxtjs/axios'
   ],
 
@@ -50,6 +50,13 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+  },
+  
+ /*
+  ** Favicon
+  */
+  icon: {
+    iconSrc: "./static/favicon.png"
   },
 
   /*
