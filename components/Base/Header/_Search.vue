@@ -60,7 +60,7 @@ export default {
 
   computed: {
     countries() {
-      return this.$store.getters["world/getCountries"]('ALL');
+      return this.$store.getters["world/getCountries"]('WORLD');
     }
   }
   
