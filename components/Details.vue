@@ -10,7 +10,6 @@
             <div class="details__title--name">
               <h1>{{country.name}}</h1>
               <h4 class="details__title--native" v-if="country.name !== country.native">{{country.native}}</h4>
-              <h4 class="details__title--native" v-if="country.name === 'New Zealand'">Aotearoa</h4>
             </div>
           </header>
           <ul class="details__markup">
@@ -48,7 +47,7 @@ export default {
     "details-markup": Markup
   },
   mounted() {
-    
+
     noScroll.on();
 
     document.body.addEventListener('keyup', e => {

@@ -59,6 +59,9 @@ const actions = {
 
     const countries = Object.keys(payload).map(key => {
       payload[key]['code'] = key;
+      if(payload[key].name === 'New Zealand'){
+        payload[key].native = "Aotearoa"
+      }
       return payload[key]
     });
     
