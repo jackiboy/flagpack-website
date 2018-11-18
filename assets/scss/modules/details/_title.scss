@@ -29,3 +29,22 @@
         color: lighten($body, 20%);
     }
 }
+
+
+@media (--mobile), (--mobile-l) {
+    .details__title{
+        &--flag{
+            display: none;
+        }
+        &--name{
+            width: 80%;
+            flex: none;
+            h1{
+                @include font-size(2);
+            }
+            h4{
+                @include font-size(1.5);
+            }
+        }
+    }
+}

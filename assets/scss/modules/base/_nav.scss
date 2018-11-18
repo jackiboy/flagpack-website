@@ -55,3 +55,11 @@ $brand: 70px;
         }
     }
 }
+
+@media (--mobile), (--mobile-l) {
+    .nav{
+        &__menu{
+            padding: 0 $spacer;
+        }
+    }
+}

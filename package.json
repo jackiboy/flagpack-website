@@ -33,6 +33,7 @@
     "eslint-plugin-vue": "^4.0.0",
     "lost": "^8.3.0",
     "node-sass": "^4.9.3",
+    "postcss-custom-media": "^7.0.7",
     "sass-loader": "^7.1.0"
   }
 }

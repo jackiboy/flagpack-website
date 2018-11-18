@@ -25,3 +25,16 @@
         }
     }
 }
+
+@media (--mobile), (--mobile-l) {
+    .tabs{
+        margin-bottom: 0;
+        &--navigation{
+            flex-direction: column;
+            li a{
+                justify-content: center;
+            }
+        }
+    }
+}
+

@@ -88,7 +88,8 @@ module.exports = {
         'autoprefixer': {
           browsers: ['>1%']
         },
-        'lost': {}
+        'lost': {},
+        'postcss-custom-media': {}
       },
     },
     extend(config, ctx) {

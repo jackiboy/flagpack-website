@@ -5,3 +5,10 @@
     margin: $spacer-lg 0;
     width: 100%;
 }
+
+@media (--mobile), (--mobile-l) {
+    .countries__table{
+        padding: 0 $spacer;
+    }
+    
+}

@@ -57,3 +57,17 @@
 }
 
 
+
+@media (--mobile), (--mobile-l) {
+  .header{
+    padding: 0 $spacer;
+    min-height: 270px;
+    &--intro{
+      text-align: center;
+      line-height: 1.5em;
+    }
+    &__search{
+      width: 100%;
+    }
+  }
+}

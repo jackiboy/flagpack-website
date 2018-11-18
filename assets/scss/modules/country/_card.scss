@@ -28,3 +28,10 @@
         text-align: center;
     }
 }
+
+
+@media (--mobile), (--mobile-l) {
+    .country__card{
+        lost-column: 1/2 2 $spacer-md;
+    }
+}

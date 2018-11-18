@@ -56,3 +56,20 @@
     }
     
 }
+
+
+@media (--mobile), (--mobile-l) {
+    .details__modal{
+        padding: $spacer-sm;
+        &--body{
+            width: 100%;
+            padding: $spacer;
+        }
+        &--close{
+            color: $secondary;
+            z-index: 1000;
+            right: $spacer-sm;
+            top: $spacer-sm;
+        }
+    }
+}
