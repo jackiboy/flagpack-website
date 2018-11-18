@@ -89,7 +89,12 @@ module.exports = {
           browsers: ['>1%']
         },
         'lost': {},
-        'postcss-custom-media': {}
+        'postcss-custom-media':{
+          extensions: {
+            '--mobile-l': 'only screen and (min-width: 481px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 481px) and (max-width: 767px) and (min-resolution: 2dppx)',
+            '--mobile':   'only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 320px) and (max-width: 480px) and (min-resolution: 2dppx)'  
+          }
+        }
       },
     },
     extend(config, ctx) {
