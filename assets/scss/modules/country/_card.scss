@@ -30,7 +30,7 @@
 }
 
 
-@media (--mobile), (--mobile-l) {
+@media (min-width: 320px) and (max-width: 767px) {
     .country__card{
         lost-column: 1/2 2 $spacer-md;
     }

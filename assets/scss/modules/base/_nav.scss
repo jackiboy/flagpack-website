@@ -56,7 +56,7 @@ $brand: 70px;
     }
 }
 
-@media (--mobile), (--mobile-l) {
+@media (min-width: 320px) and (max-width: 767px) {
     .nav{
         &__menu{
             padding: 0 $spacer;

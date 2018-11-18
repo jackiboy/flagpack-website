@@ -46,7 +46,7 @@
 
 
 
-@media (--mobile), (--mobile-l) {
+@media (min-width: 320px) and (max-width: 767px) {
     .details__markup{
         margin: $spacer-lg 0 0;
         &--item{

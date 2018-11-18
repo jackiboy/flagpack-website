@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-@media (--mobile), (--mobile-l) {
+@media (min-width: 320px) and (max-width: 767px) {
     .countries__table{
         padding: 0 $spacer;
     }

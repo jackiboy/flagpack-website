@@ -58,7 +58,7 @@
 
 
 
-@media (--mobile), (--mobile-l) {
+@media (min-width: 320px) and (max-width: 767px) {
   .header{
     padding: 0 $spacer;
     min-height: 270px;

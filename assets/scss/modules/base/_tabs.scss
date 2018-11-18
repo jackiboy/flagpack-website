@@ -26,7 +26,8 @@
     }
 }
 
-@media (--mobile), (--mobile-l) {
+
+@media (min-width: 320px) and (max-width: 767px) {
     .tabs{
         margin-bottom: 0;
         &--navigation{
@@ -35,8 +36,7 @@
                 justify-content: center;
             }
         }
-    }
+    }     
 }
-
 
 
