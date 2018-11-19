@@ -58,19 +58,6 @@ module.exports = {
     iconSrc: "./static/favicon.png"
   },
 
-/*
-** Workbox
-*/
-  workbox: {
-      runtimeCaching: [
-      {
-        urlPattern: 'https://fonts.googleapis.com/.*',
-        handler: 'cacheFirst',
-        method: 'GET'
-      }
-    ]
-  },
-
   meta: {
     theme_color: "#320fa8",
     ogSiteName: "Flagpack",
