@@ -1,5 +1,5 @@
 <template>
-  <div class="country__card" @click="openDetails"  v-tooltip="country.name">
+  <div class="country__card" @click="openDetails">
     <span class="fp country__card--flag" :class="code"></span>
     <h4 class="country__card--name">{{country.name|truncate(25)}}</h4>
   </div>
