@@ -72,4 +72,9 @@
             top: $spacer-sm;
         }
     }
+    .details-enter, .details-leave-to {
+        .details__modal--body{
+            transform: translateY(0);
+        }
+    }
 }

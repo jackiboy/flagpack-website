@@ -13,11 +13,13 @@ body {
 }
 
 .body{
+    backface-visibility: hidden;
     background: $ceramic;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left bottom;
     min-height: 100vh;
+    position: relative;
 }
 
 @lost flexbox flex;

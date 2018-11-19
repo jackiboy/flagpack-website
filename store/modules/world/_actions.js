@@ -6,7 +6,7 @@ function sorter(property) {
       property = property.substr(1);
   }
 
-  return function (a,b) {
+  return (a, b) => {
       if(sortOrder == -1){
           return b[property].localeCompare(a[property]);
       }else{
