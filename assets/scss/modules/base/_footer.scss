@@ -1,0 +1,15 @@
+.footer{
+    background: darken($ceramic, 5%);
+    padding: $spacer-lg 0;
+    display: block;
+    &--link{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        letter-spacing: 1.2px;
+        width: 100%;
+        img{
+            height: 1em;
+        }
+    }
+}

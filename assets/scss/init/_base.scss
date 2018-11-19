@@ -9,7 +9,6 @@ body {
     position:   relative;
     min-height: 100vh;
     background: darken($primary, 8%);
-    height: 100%;
 }
 
 .body{
@@ -17,7 +16,7 @@ body {
     background: $ceramic;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left bottom;
+    background-position: bottom;
     min-height: 100vh;
     position: relative;
 }
