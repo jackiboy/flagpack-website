@@ -1,5 +1,5 @@
 .tabs{
-    background: darken($primary, 5%);
+    background: darken($primary, 8%);
     margin-bottom: $spacer-lg;
     &--navigation{
         width: 100%;
@@ -19,7 +19,7 @@
                 color: $white;
             }
             &.nuxt-link-exact-active, &.nuxt-link-active{
-                background: darken($primary, 8%);
+                background: darken($primary, 12%);
                 color: $secondary;
             }
         }

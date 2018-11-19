@@ -6,11 +6,13 @@ $brand: 70px;
     text-align: center;
     &--brand{
         width: 250px;
-        height: $brand;
+        transition: transform 0.2s ease-in-out;
+        height: calc(#{$brand} + #{$spacer-sm});
+        // height: $brand;
         background: darken($primary, 8%);
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) translateY(-$spacer-sm);
         top: 0;
         border-radius: 0 0 $line-height*2 $line-height*2;
         display: flex;
@@ -18,8 +20,16 @@ $brand: 70px;
         justify-content: center;
         z-index: 1001;
         img{
-            width: 60%;
+            transition: transform 0.2s ease-in-out;
+            width: 65%;
             pointer-events: none;
+        }
+        &:hover{
+            cursor: pointer;
+            transform: translateX(-50%) translateY(0);
+            img{
+                transform: scale(1.1);
+            }
         }
     }
     &__menu{
