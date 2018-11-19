@@ -39,7 +39,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    ['@nuxtjs/pwa', { workbox: false } ],
+    ['@nuxtjs/pwa'],
     ['@nuxtjs/google-tag-manager', { id: 'GTM-N3HXKPW' }],
     '@nuxtjs/axios'
   ],
