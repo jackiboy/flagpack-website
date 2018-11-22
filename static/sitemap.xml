@@ -9,37 +9,42 @@
 
 <url>
   <loc>https://flag.pk/world</loc>
-  <lastmod>2018-11-18T20:43:41+00:00</lastmod>
+  <lastmod>2018-11-22T22:28:58+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://flag.pk/north-america</loc>
-  <lastmod>2018-11-18T20:43:41+00:00</lastmod>
+  <lastmod>2018-11-22T22:28:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://flag.pk/south-america</loc>
-  <lastmod>2018-11-18T20:43:41+00:00</lastmod>
+  <lastmod>2018-11-22T22:28:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://flag.pk/africa</loc>
-  <lastmod>2018-11-18T20:43:41+00:00</lastmod>
+  <lastmod>2018-11-22T22:28:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://flag.pk/asia</loc>
-  <lastmod>2018-11-18T20:43:41+00:00</lastmod>
+  <lastmod>2018-11-22T22:28:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://flag.pk/europe</loc>
-  <lastmod>2018-11-18T20:43:41+00:00</lastmod>
+  <lastmod>2018-11-22T22:28:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://flag.pk/oceania</loc>
-  <lastmod>2018-11-18T20:43:41+00:00</lastmod>
+  <lastmod>2018-11-22T22:28:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flag.pk/other</loc>
+  <lastmod>2018-11-22T22:28:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
