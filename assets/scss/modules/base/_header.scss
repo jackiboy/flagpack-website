@@ -21,6 +21,7 @@
     position: relative;
     &--button{
       @include font-size(1.75);
+      transition: all 0.2s ease-in-out;
       position: absolute;
       right: 0;
       top: 0;
@@ -41,6 +42,7 @@
     }
     input{
       @include font-size(1.1);
+      transition: all 0.2s ease-in-out;
       -webkit-appearance: textfield;
       width: 100%;
       background: $white;
@@ -51,6 +53,13 @@
       &::-webkit-search-decoration,
       &::-webkit-search-cancel-button {
         -webkit-appearance: none;
+      }
+      &:focus{
+        outline: none;
+        transform: scale(1.05);
+      }
+      &:focus + .header__search--button{
+        right: -$spacer / 1.5;
       }
     }
   }

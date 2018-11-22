@@ -6,6 +6,7 @@
           :class="{'is-active': flag.type === 'normal'}"
           @click="selectType('normal')"
           title="rectangle flags"
+          tabindex="0"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 15"><rect width="20" height="14" x=".5" y=".5" fill-rule="nonzero" rx="3"/></svg>
         </a>
@@ -15,6 +16,7 @@
           :class="{'is-active': flag.type === 'square'}"
           @click="selectType('square')"
           title="square flags"
+          tabindex="0"
         >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><rect width="14" height="14" x=".5" y=".5" fill-rule="nonzero" rx="3"/></svg>
         </a>

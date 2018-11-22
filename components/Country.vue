@@ -1,5 +1,5 @@
 <template>
-  <div class="country__card" @click="openDetails">
+  <div class="country__card" tabindex="0" @click="openDetails" @keyup.enter="openDetails">
     <span 
       class="fp country__card--flag" 
       :class="[

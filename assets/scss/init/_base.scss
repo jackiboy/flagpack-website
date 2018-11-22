@@ -31,3 +31,9 @@ body {
 .clear-fix {
     lost-utility: clearfix;
 }
+
+*{
+    &:focus{
+        outline: solid 2px $secondary;
+    }
+}
