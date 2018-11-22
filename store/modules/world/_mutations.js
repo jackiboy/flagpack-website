@@ -11,6 +11,9 @@ const mutations ={
   setCountry(state, payload){
     state.country = payload[0]
   },
+  setFlagType(state, payload){
+    state.flag = payload
+  },
 }
 
 export default mutations;

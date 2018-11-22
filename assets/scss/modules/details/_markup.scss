@@ -1,13 +1,16 @@
 .details__markup{
-    margin: $spacer-lg * 2 0 0;
+    margin: $spacer-lg 0 0;
     padding: 0;
     list-style: none;
     li{
         width: 100%;
+        margin-bottom: $spacer-lg;
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
     &--item{
         display: flex;
-        margin-bottom: $spacer-lg;
         align-items: center;
         position: relative;
     }

@@ -16,6 +16,7 @@ const getters = {
   getSearchResults: state => state.searchResults,
   details: state => state.details,
   getCountry: state => state.country,
+  getFlagType: state => state.flag,
 }
 
 export default getters;

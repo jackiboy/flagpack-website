@@ -6,7 +6,13 @@
     <div class="container">
       <div class="details__modal--body">
         <header class="details__title">
-            <span class="fp fp-rounded details__title--flag" :class="code"></span>
+            <span 
+            class="fp fp-rounded details__title--flag" 
+            :class="[
+              {'fp-square': flag.type === 'square'},
+              code
+            ]"
+            ></span>
             <div class="details__title--name">
               <h1>{{country.name}}</h1>
               <h4 class="details__title--native" v-if="country.name !== country.native">{{country.native}}</h4>
@@ -71,6 +77,9 @@ export default {
     },
     code(){
       return this.$options.filters.lowercase(this.country.code);
+    },
+    flag(){
+      return this.$store.getters['world/getFlagType']
     }
   }
 };

@@ -34,10 +34,13 @@
         }
     }
     &--flag{
-        line-height: $line-height * 3.5;
-        width: (4 / 3) * ($line-height * 3.5);
         margin-bottom: $spacer;
         box-shadow: $card-box-shadow;
+        line-height: $line-height * 3.5 !important;
+        width: (4 / 3) * ($line-height * 3.5) !important;
+        &.fp-square{
+            width: $line-height * 3.5 !important;
+        }
     }
     &--name{
         @include font-size(0.9);

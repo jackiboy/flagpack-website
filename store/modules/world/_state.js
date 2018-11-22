@@ -8,10 +8,14 @@ const state = () => ({
     {name: "Asia", slug: "asia", code: "AS"},
     {name: "Europe", slug: "europe", code: "EU"},
     {name: "Oceania", slug: "oceania", code: "OC"},
+    {name: "Other", slug: "other", code: "OT"},
   ],
   searchResults: [],
   details: false,
-  country: null
+  country: null,
+  flag: {
+    type: 'normal'
+  }
 })
 
 export default state;

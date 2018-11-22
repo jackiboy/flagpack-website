@@ -1,0 +1,44 @@
+
+.type__selector{
+    position: fixed;
+    right: $spacer;
+    bottom: $spacer;
+    z-index: 2000;
+    background: darken($primary, 10%);
+    border-radius: $border-radius;
+    padding: $spacer / 1.5;
+    backface-visibility: hidden;
+    &--menu{
+        margin: 0;
+        padding:0;
+        list-style: none;
+        li{
+            &:first-child{
+                margin-right: $spacer-sm;
+            }
+            display: inline-block;
+        }
+        a{
+            display: flex;
+            &:hover{
+                cursor: pointer;
+            }
+            &:focus{
+                outline: none;
+            }
+            &.is-active{
+                svg{
+                    stroke: $secondary;
+                    fill: $secondary;
+                }
+            }
+            svg{
+                transition: all 0.15s ease-in-out;
+                pointer-events: none;
+                height: 30px;
+                stroke: $white;
+                fill: transparent;
+            }
+        }
+    }
+}

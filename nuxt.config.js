@@ -75,7 +75,8 @@ module.exports = {
       '/africa',
       '/asia',
       '/europe',
-      '/oceania'
+      '/oceania',
+      '/other'
     ]
   },
 

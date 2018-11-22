@@ -1,6 +1,7 @@
 <template>
     <div>
       <div class="body" style="background-image: url('/wave.svg')">
+        <type-selector></type-selector>
         <transition name="details">
           <modal-details v-if="details"></modal-details>
         </transition>
@@ -42,6 +43,7 @@ import Tabs from '~/components/Base/Tabs';
 import Footer from '~/components/Base/Footer';
 import Country from '~/components/Country';
 import Details from '~/components/Details';
+import TypeSelector from '~/components/Base/TypeSelector';
 
 export default {
   async asyncData ({ params, store, error }) {
@@ -60,13 +62,19 @@ export default {
       this.$store.dispatch('world/details', false);
       noScroll.off();
   },
+  mounted() {
+    const type = localStorage.getItem('flag-type');
+    if(type !== null)
+      this.$store.dispatch('world/setFlagType', type);
+  },
   components: {
     "base-nav": Nav, 
     "base-header": Header,
     "base-tabs": Tabs,
     "base-footer": Footer,
     "country": Country,
-    "modal-details": Details
+    "modal-details": Details,
+    "type-selector": TypeSelector
   },
   computed: {
     results(){

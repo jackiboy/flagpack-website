@@ -1,58 +1,5 @@
-function sorter(property) {
-  var sortOrder = 1;
-
-  if(property[0] === "-") {
-      sortOrder = -1;
-      property = property.substr(1);
-  }
-
-  return (a, b) => {
-      if(sortOrder == -1){
-          return b[property].localeCompare(a[property]);
-      }else{
-          return a[property].localeCompare(b[property]);
-      }        
-  }
-}
-
-
-const gb = [
-  {
-    name: "England",
-    native: "England",
-    code: "GB-ENG",
-    continent: "EU",
-    capital: "London"
-  },
-  {
-    name: "Scotland",
-    native: "Albain",
-    code: "GB-SCT",
-    continent: "EU",
-    capital: "Edinburgh"
-  },
-  {
-    name: "Wales",
-    native: "Cymru",
-    code: "GB-WLS",
-    continent: "EU",
-    capital: "Cardiff"
-  },
-  {
-    name: "Northern Ireland",
-    native: "Tuaisceart Éireann",
-    code: "GB-NIR",
-    continent: "EU",
-    capital: "Belfast"
-  },
-  {
-    name: "Shetland",
-    native: "Sealtainn",
-    code: "GB-ZET",
-    continent: "EU",
-    capital: "Lerwick"
-  },
-]
+import extra from '~/helpers/extraFlags';
+import sorter from '~/helpers/sorter';
 
 const actions = {
   setCountries: (context, payload) => {
@@ -65,7 +12,7 @@ const actions = {
       return payload[key]
     });
     
-    const allCountries = [...countries, ...gb]
+    const allCountries = [...countries, ...extra]
 
     allCountries.sort(sorter("name"));
 
@@ -84,6 +31,21 @@ const actions = {
     });
 
     store.commit('setCountry', country)
+  },
+  setFlagType: (context, arg) => {
+    let payload;
+
+    if(arg === 'square'){
+      payload = {
+        type: 'square'
+      }
+    } else {
+      payload = {
+        type: 'normal'
+      }
+    } 
+
+    context.commit('setFlagType', payload)
   },
 }
 
