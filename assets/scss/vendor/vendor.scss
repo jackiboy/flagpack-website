@@ -1,2 +1,5 @@
 @import 'normalize.css/normalize.css';
-@import 'flagpack/dist/flagpack.css';
+
+$fp-4x3-path      : '/flags/4x3/';
+$fp-1x1-path      : '/flags/1x1/';
+@import 'flagpack/src/flagpack.scss';
