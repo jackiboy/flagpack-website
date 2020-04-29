@@ -56,13 +56,6 @@ const extra = [
     capital: "Edinburgh of the Seven Seas"
   },
   {
-    name: "Tristan da Cunha",
-    native: "Tristan da Cunha",
-    code: "TA",
-    continent: "AF",
-    capital: "Edinburgh of the Seven Seas"
-  },
-  {
     name: "Ascension Island",
     native: "Ascension Island",
     code: "AC",
