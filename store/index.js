@@ -11,7 +11,7 @@ const createStore = () => {
   return new Vuex.Store({
     actions: {
       async nuxtServerInit ({ dispatch }, { app }) {
-        const getCountries = await countries;
+        const getCountries = countries;
         dispatch('world/setCountries', getCountries);
       }
     },
